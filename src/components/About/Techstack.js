@@ -8,33 +8,39 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
+  DiRedis,
+  DiJava,
+  DiGithubFull,
 } from "react-icons/di";
 import {
   SiMysql,
   SiExpress,
   SiJava,
+  SiBlockchaindotcom,
+  SiSpringboot,
+  SiApachekafka,
 } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiSpringboot />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        < SiApachekafka/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJava />
+        <SiBlockchaindotcom />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -43,13 +49,26 @@ function Techstack() {
         <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <DiGithubFull />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
+        <DiRedis />
       </Col>
     </Row>
   );
 }
 
 export default Techstack;
+// export declare const DiGithubAlt: IconType;
+// export declare const DiGithubBadge: IconType;
+// export declare const DiGithubFull: IconType;
+// export declare const DiGithub: IconType;
+// DiJava: IconType;
+// DiIntellij: IconType;
+// DiJsBadge: IconType;
+// DiMysql: IconType;
+// DiReact: IconType;
+// DiRedis: IconType;
+// 
+// 
+// 
