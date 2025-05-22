@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/YasharthTripathi-VIT-Vellore.pdf";
+import pdf from "../../Assets/../Assets/Prafful-Shukla.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink ="https://raw.githubusercontent.com/yasharthratan/Personal-Portfolio/main/YasharthTripathi-VIT-Vellore.pdf";
+// const resumeLink ="https://drive.google.com/file/d/1-LVjbkIWJP6Jh-KqZ8-z-c5yxDxedGwZ/view?usp=sharing";
+// const resumeLink = "../../Assets/../Assets/Prafful-Shukla.pdf"
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -21,7 +22,7 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        {/*<Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={pdf}
@@ -31,10 +32,10 @@ function ResumeNew() {
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
-  </Row>*/}
+  </Row>
 
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+          <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
